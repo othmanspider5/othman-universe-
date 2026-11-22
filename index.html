@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fa">
+  <title>OTHMAN UNIVERSE — Official Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topline"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Othman Universe home">
+      <span class="brand-mark">O<span>•</span></span>
+      <span class="brand-name">OTHMAN <b>UNIVERSE</b></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+    <nav id="mainNav">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#news" class="nav-link">News</a>
+      <a href="#fanzone" class="nav-link">Fan Zone</a>
+      <a href="#fanwall" class="nav-link">Fan Wall</a>
+      <a href="#about" class="nav-link">About Me</a>
+    </nav>
+    <button class="admin-open" id="adminOpen"><span>↗</span> Admin</button>
+  </header>
+
+  <main id="siteMain">
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> THE OFFICIAL DIGITAL SPACE</div>
+        <h1>WELCOME TO<br><span>MY UNIVERSE.</span></h1>
+        <p class="hero-lead" id="heroIntro">A place for my projects, latest updates, and the people who make this journey special.</p>
+        <div class="hero-actions">
+          <a class="btn btn-dark" href="#projects">Explore projects <span>↗</span></a>
+          <a class="btn btn-light" href="#about">Discover my story</a>
+        </div>
+        <div class="hero-meta"><span class="meta-dot"></span> CREATED BY OTHMAN LAMMALLAH <span class="meta-sep">/</span> THE SPIDER</div>
+      </div>
+      <div class="hero-art" aria-label="Blue creative workspace photograph with spider-inspired artwork">
+        <div class="hero-photo" aria-hidden="true"></div>
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="art-core"><span>OU</span></div>
+        <div class="art-tag tag-top">CREATIVE<br>UNIVERSE</div>
+        <div class="art-tag tag-bottom">EST. 2026 <i>✳</i></div>
+        <div class="art-line"></div>
+      </div>
+      <div class="hero-bottom"><span>SCROLL TO EXPLORE</span><span class="scroll-line"></span><span>01 — 06</span></div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="section-heading">
+        <div><div class="eyebrow">WHAT I'M BUILDING</div><h2>Featured <span>projects.</span></h2></div>
+        <p>A selection of ideas and digital experiences<br>created with curiosity and ambition.</p>
+      </div>
+      <div class="project-grid" id="projectGrid"></div>
+    </section>
+
+    <section class="section news-section" id="news">
+      <div class="section-heading">
+        <div><div class="eyebrow">FRESH FROM THE UNIVERSE</div><h2>Latest <span>news.</span></h2></div>
+        <p>Updates, announcements, and things<br>happening behind the scenes.</p>
+      </div>
+      <div class="news-list" id="newsList"></div>
+    </section>
+
+    <section class="section fanzone-section" id="fanzone">
+      <div class="fan-card">
+        <div class="fan-graphic"><div class="fan-ring"></div><div class="fan-star">✳</div><span>YOU<br>ARE<br>PART<br>OF IT.</span></div>
+        <div class="fan-content">
+          <div class="eyebrow light-eyebrow">MORE THAN AN AUDIENCE</div>
+          <h2>This universe<br>is better <em>together.</em></h2>
+          <p>Take part in polls, share your ideas, and help shape what comes next. This is your space too.</p>
+          <a class="btn btn-white" href="#fanwall">Join the fan wall <span>↗</span></a>
+        </div>
+      </div>
+      <div class="fan-features">
+        <article><span>01</span><h3>Vote & decide</h3><p>Share your opinion in community polls.</p></article>
+        <article><span>02</span><h3>Send a message</h3><p>Leave a positive note for the community.</p></article>
+        <article><span>03</span><h3>Stay updated</h3><p>Keep up with new projects and updates.</p></article>
+      </div>
+    </section>
+
+    <section class="section wall-section" id="fanwall">
+      <div class="section-heading">
+        <div><div class="eyebrow">COMMUNITY VOICES</div><h2>The fan <span>wall.</span></h2></div>
+        <p>A little corner for the people<br>who make this community.</p>
+      </div>
+      <div class="wall-layout">
+        <form class="message-form" id="fanForm">
+          <label for="fanName">YOUR NAME</label><input id="fanName" maxlength="32" placeholder="Your name" required>
+          <label for="fanMessage">YOUR MESSAGE</label><textarea id="fanMessage" maxlength="240" rows="4" placeholder="Write something kind..." required></textarea>
+          <button class="btn btn-dark" type="submit">Post message <span>↗</span></button>
+          <small>Messages are shown on this browser in this starter version.</small>
+        </form>
+        <div class="wall-messages" id="wallMessages"></div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="about-label"><div class="eyebrow">A LITTLE ABOUT ME</div><div class="about-index">06 / 06</div></div>
+      <div class="about-main">
+        <h2>Curious mind.<br><span>Creative energy.</span></h2>
+        <p id="aboutText">I'm Othman Lammallah. I enjoy exploring technology, creating websites, and turning ideas into digital experiences. This space brings my work and community together.</p>
+        <div class="about-signature">OTHMAN LAMMALLAH <span>✳</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">O<span>•</span></span><span class="brand-name">OTHMAN <b>UNIVERSE</b></span></a>
+    <p>Built with curiosity. Shared with the universe.</p>
+    <span>© <span id="year"></span> OTHMAN LAMMALLAH</span>
+  </footer>
+
+  <div class="modal-backdrop" id="adminModal" aria-hidden="true">
+    <div class="admin-panel" role="dialog" aria-modal="true" aria-labelledby="adminTitle">
+      <div class="admin-head">
+        <div><div class="eyebrow">PRIVATE CONTROL CENTER</div><h2 id="adminTitle">Admin <span>dashboard.</span></h2></div>
+        <button class="icon-btn" id="adminClose" aria-label="Close dashboard">✕</button>
+      </div>
+      <div id="loginView" class="login-view">
+        <div class="lock-icon">⌑</div><h3>Welcome back.</h3><p>Enter your access code to manage the website.</p>
+        <form id="loginForm"><input id="adminCode" type="password" inputmode="numeric" maxlength="12" placeholder="Access code" autocomplete="current-password" required><button class="btn btn-dark" type="submit">Unlock dashboard ↗</button><div class="login-error" id="loginError"></div></form>
+      </div>
+      <div id="dashboardView" class="dashboard-view hidden">
+        <aside class="admin-sidebar">
+          <button class="dash-tab active" data-tab="overview">Overview</button>
+          <button class="dash-tab" data-tab="projects">Projects</button>
+          <button class="dash-tab" data-tab="news">News</button>
+          <button class="dash-tab" data-tab="messages">Fan messages</button>
+          <button class="dash-tab" data-tab="pages">Sections</button>
+          <button class="dash-tab" data-tab="design">Site content</button>
+          <button class="dash-tab" data-tab="code">Code editor</button>
+          <button class="dash-tab" data-tab="backup">Backup</button>
+          <button class="logout-btn" id="logoutBtn">Log out ↗</button>
+        </aside>
+        <div class="dash-content">
+          <section class="dash-page active" id="tab-overview">
+            <div class="dash-title"><div><div class="eyebrow">YOUR CONTROL CENTER</div><h3>Overview</h3></div></div>
+            <div class="stats-grid"><div class="stat"><span>PROJECTS</span><b id="statProjects">0</b></div><div class="stat"><span>NEWS POSTS</span><b id="statNews">0</b></div><div class="stat"><span>FAN MESSAGES</span><b id="statMessages">0</b></div><div class="stat"><span>CUSTOM SECTIONS</span><b id="statSections">0</b></div></div>
+            <div class="notice"><b>Quick tip</b><p>Use the tabs to edit your content. Changes are saved in this browser. Export a backup before moving the site to another device.</p></div>
+          </section>
+          <section class="dash-page" id="tab-projects">
+            <div class="dash-title"><div><div class="eyebrow">YOUR WORK</div><h3>Projects</h3></div><button class="small-dark" id="addProject">+ Add project</button></div>
+            <div id="adminProjects" class="admin-items"></div>
+          </section>
+          <section class="dash-page" id="tab-news">
+            <div class="dash-title"><div><div class="eyebrow">ANNOUNCEMENTS</div><h3>News</h3></div><button class="small-dark" id="addNews">+ Add news</button></div>
+            <div id="adminNews" class="admin-items"></div>
+          </section>
+          <section class="dash-page" id="tab-messages">
+            <div class="dash-title"><div><div class="eyebrow">COMMUNITY</div><h3>Fan messages</h3></div></div>
+            <div id="adminMessages" class="admin-items"></div>
+          </section>
+          <section class="dash-page" id="tab-pages">
+            <div class="dash-title"><div><div class="eyebrow">STRUCTURE</div><h3>Sections</h3></div><button class="small-dark" id="addSection">+ Add section</button></div>
+            <p class="dash-help">Add a new section to the page, or hide sections you don't need. The six main sections remain available.</p>
+            <div id="adminSections" class="admin-items"></div>
+          </section>
+          <section class="dash-page" id="tab-design">
+            <div class="dash-title"><div><div class="eyebrow">PERSONALIZE</div><h3>Site content</h3></div></div>
+            <form id="contentForm" class="editor-form">
+              <label>Hero introduction</label><textarea id="editIntro" rows="3"></textarea>
+              <label>About me text</label><textarea id="editAbout" rows="4"></textarea>
+              <label>Accent color</label><input id="editAccent" type="color" value="#1769d2">
+              <label>Display name</label><input id="editName" maxlength="60">
+              <button class="btn btn-dark" type="submit">Save changes ↗</button>
+            </form>
+          </section>
+          <section class="dash-page" id="tab-code">
+            <div class="dash-title"><div><div class="eyebrow">ADVANCED CUSTOMIZATION</div><h3>Code editor</h3></div></div>
+            <div class="notice warning"><b>Careful with custom code</b><p>Only add code you understand. A mistake can affect the appearance or behavior of your site. Custom CSS and JavaScript are stored in this browser.</p></div>
+            <label class="code-label" for="customCss">CUSTOM CSS</label><textarea class="code-area" id="customCss" spellcheck="false" placeholder="/* Add your CSS here */"></textarea>
+            <label class="code-label" for="customJs">CUSTOM JAVASCRIPT</label><textarea class="code-area" id="customJs" spellcheck="false" placeholder="// Add your JavaScript here"></textarea>
+            <div class="code-actions"><button class="small-dark" id="saveCode">Save and apply code</button><button class="small-light" id="clearCode">Clear custom code</button></div>
+          </section>
+          <section class="dash-page" id="tab-backup">
+            <div class="dash-title"><div><div class="eyebrow">YOUR DATA</div><h3>Backup & restore</h3></div></div>
+            <div class="notice"><b>Keep your work safe</b><p>Export your site content as a JSON backup. You can import it later in this browser or another copy of the site.</p></div>
+            <div class="backup-actions"><button class="btn btn-dark" id="exportData">Export backup ↓</button><label class="btn btn-light file-label">Import backup ↑<input type="file" id="importData" accept="application/json"></label></div>
+            <button class="danger-btn" id="resetData">Reset all site data</button>
+          </section>
+        </div>
+      </div>
+      <div class="admin-foot"><span>OTHMAN UNIVERSE CMS</span><span>LOCAL EDITION · 2026</span></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+  <style id="customStyle"></style>
+  <script src="script.js"></script>
+</body>
+</html>
